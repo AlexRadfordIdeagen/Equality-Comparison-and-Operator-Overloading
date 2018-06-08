@@ -39,7 +39,7 @@ namespace Ducks
 
             foreach (var duck in duckies)
             {
-                Console.WriteLine("Name: {0} Type: {1} Weight in grams: {2} Age in months: {3}", duck.Name, duck.Type, duck.WeightInGrams, duck.AgeInMonths);
+                Console.WriteLine(duck.ToString());
             }
             Console.ReadLine();
         }

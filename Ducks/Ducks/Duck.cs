@@ -31,6 +31,12 @@ namespace Ducks
             return obj != null && obj.Name == Name;
         }
 
+
+        public override string ToString()
+        {
+            return $"Name: {Name} Type: {Type} Weight in grams: {WeightInGrams} Age in months: {AgeInMonths}";
+        }
+
         public Duck(string name, string type, int weightInGrams, int ageInMonths)
         {
             Name = name;
